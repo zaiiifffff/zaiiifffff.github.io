@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/Onest.ttf');
+}
+
+.header {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .rightside {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .leftside {
+        justify-content: center;
+        width: 100%;
+        margin: 2px 2px;
+    }
+
+    #logo {
+        margin: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.leftside {
+    align-items: center;
+
+}
+
+.rightside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pixelbutton {
+    margin: 10px 10px;
+    font-family: Onest;
+}
+
+#notesbutton {
+    margin: 10px 10px;
+    font-family: Onest;
+}
+
+#aboutbutton {
+    margin: 10px 10px;
+    font-family: Onest;
+}
+
+#logo {
+    font-family: Onest;
+}
+
+.main {
+    width: 100%;
+}
+
+.banner {
+    width: 90%;
+    margin: 200px auto 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bannerwelcome {
+    font-family: Onest;
+    text-align: center;
+    font-size: 64px;
+    margin: 10px auto;
+}
+
+#banneradditional {
+    font-family: Onest;
+    text-align: center;
+    font-size: 32px;
+    margin: 10px auto;
+}
