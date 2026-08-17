@@ -3,7 +3,7 @@
     src: url('fonts/Onest.ttf');
 }
 
-body {
+html {
     background-color: #000000;
     overflow-y: hidden;
     container-type: inline-size;
