@@ -3,11 +3,130 @@
     src: url('fonts/Onest.ttf');
 }
 
+body {
+    background-color: 000000;
+    overflow-y: hidden;
+}
+
 .header {
     margin: 2%;
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.leftside {
+    align-items: center;
+
+}
+
+.rightside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pixelbutton {
+    margin: 10px 10px;
+    font-family: Onest;
+    color: white;
+}
+
+#aboutbutton {
+    margin: 10px 10px;
+    font-family: Onest;
+    color: white;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 8px;
+    color: white;
+}
+
+#logo {
+    font-family: Onest;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0px 0px;
+}
+
+#camerarolllogo {
+    font-family: Onest;
+    margin: 0px 0px;
+}
+
+.main {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    margin: 00px auto 200px auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Dark base color */
+    background-image: radial-gradient(
+    circle at 50% 50%, 
+    rgba(37, 85, 156, 0.769) 0%, 
+    rgba(15, 34, 46, 0.808) 90%
+    );
+    width: 100cqw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+#bannerwelcome {
+    font-family: Onest;
+    text-align: center;
+    font-size: 64px;
+    margin: 10px auto;
+    background: linear-gradient(90deg, #2a7fe0, #7bcefe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#igicon {
+    float: left;
+    margin: 10px auto;
+    color: white;
+    stroke: white;       /* Matches fill color to expand the shape */
+    stroke-width: 0.6px; /* Adds extra thickness around the edges */
+    stroke-linejoin: round;
+}
+
+#banneradditional {
+    float: right;
+    font-family: Onest;
+    text-align: center;
+    font-size: 32px;
+    margin: 10px auto;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -28,69 +147,17 @@
         margin: 2px 2px;
     }
 
+    .logos {
+        align-items: center;
+    }
+
     #logo {
         margin: 0;
+        display: none;
     }
-}
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.leftside {
-    align-items: center;
-
-}
-
-.rightside {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#pixelbutton {
-    margin: 10px 10px;
-    font-family: Onest;
-}
-
-#notesbutton {
-    margin: 10px 10px;
-    font-family: Onest;
-}
-
-#aboutbutton {
-    margin: 10px 10px;
-    font-family: Onest;
-}
-
-#logo {
-    font-family: Onest;
-}
-
-.main {
-    width: 100%;
-}
-
-.banner {
-    width: 90%;
-    margin: 200px auto 200px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#bannerwelcome {
-    font-family: Onest;
-    text-align: center;
-    font-size: 64px;
-    margin: 10px auto;
-}
-
-#banneradditional {
-    font-family: Onest;
-    text-align: center;
-    font-size: 32px;
-    margin: 10px auto;
+    #camerarolllogo {
+        margin: 0;
+        text-align: center;
+    }
 }
