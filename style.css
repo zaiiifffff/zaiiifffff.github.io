@@ -94,3 +94,82 @@ a {
     font-size: 32px;
     margin: 10px auto;
 }
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin: 50px auto;
+}
+
+.firstblock {
+    margin: 0px 10px 0px 20px;
+    padding: 40px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+}
+
+#firstblocktitle {
+    font-family: Onest;
+    text-align: center;
+    font-size: 32px;
+    margin: 10px auto;
+}
+
+#firstblocksubtitle {
+    font-family: Onest;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+#firstblocksubtitleunderline {
+    text-decoration: underline dashed;
+    text-underline-offset: 4px;
+}
+
+.footer {
+    border-top: 6px dashed black;
+    width: 100%;
+}
+
+#footertext {
+    font-family: Onest;
+    text-align: left;
+    font-size: 24px;
+    margin: 30px 10px 10px 50px;
+    float: left;
+}
+
+.morelinks {
+    float: right;
+    margin: 30px 50px 10px 10px;
+}
+
+#morecontact {
+    color: rgb(160, 160, 160);
+    font-family: Onest;
+    text-align: right;
+    font-size: 24px;
+    margin: 0px;
+}
+
+#glowingcarpenterboy {
+    color: black;
+    font-family: Onest;
+    text-align: left;
+    font-size: 24px;
+    margin: 0px;
+    transition: text-shadow 0.5s;
+}
+
+#glowingcarpenterboy:hover {
+    color: black;
+    text-shadow: 0 0 5px rgb(164, 189, 228), 0 0 10px rgb(164, 189, 228), 0 0 15px rgb(164, 189, 228), 0 0 20px rgb(164, 189, 228), 0 0 30px rgb(164, 189, 228), 0 0 40px rgb(164, 189, 228), 0 0 55px rgb(164, 189, 228), 0 0 75px rgb(164, 189, 228);
+    cursor: default;
+}
