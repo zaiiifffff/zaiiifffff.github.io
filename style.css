@@ -3,12 +3,21 @@
     src: url('fonts/Onest.ttf');
 }
 
+/* Remove underline from links and set color to black */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .header {
     margin: 2%;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
+
+/* Responsive design for smaller screens */
 
 @media (max-width: 768px) {
     .header {
@@ -31,11 +40,6 @@
     #logo {
         margin: 0;
     }
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 .leftside {
@@ -67,6 +71,8 @@ a {
 #logo {
     font-family: Onest;
 }
+
+/* Main content styling */
 
 .main {
     width: 100%;
@@ -133,6 +139,8 @@ a {
     text-underline-offset: 4px;
 }
 
+/* Footer styling */
+
 .footer {
     border-top: 6px dashed black;
     width: 100%;
@@ -142,20 +150,19 @@ a {
     font-family: Onest;
     text-align: left;
     font-size: 24px;
-    margin: 30px 10px 10px 50px;
-    float: left;
+    margin: 30px 10px 0px 50px;
 }
 
 .morelinks {
-    float: right;
-    margin: 30px 50px 10px 10px;
+    margin: 0px 50px 10px 10px;
 }
 
-#morecontact {
-    color: rgb(160, 160, 160);
+#morelinkslink {
+    color: black;
     font-family: Onest;
+    font-size: 20px;
+    font-weight: 500;
     text-align: right;
-    font-size: 24px;
     margin: 0px;
 }
 
