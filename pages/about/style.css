@@ -96,16 +96,15 @@ a {
 }
 
 .container {
+    margin: 100px auto;
     width: 90%;
     max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px;
-    margin: 60px auto;
+    gap: 20px;
 }
 
 .firstblock {
-    margin: 0px 10px 0px 20px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -123,7 +122,6 @@ a {
 
 
 .secondblock {
-    margin: 0px 20px 0px 20px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -136,6 +134,30 @@ a {
     font-family: Onest;
     text-align: center;
     font-size: 24px;
+    margin: 0px auto;
+}
+
+.codeprogress {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+    grid-column: 1 / span 2;
+}
+
+#codeprogresstitle {
+    font-family: Onest;
+    text-align: center;
+    font-size: 48px;
+    margin: 10px auto;
+}
+
+#codeprogresstext {
+    font-family: Onest;
+    text-align: center;
+    font-size: 24px;
     margin: 10px auto;
 }
 
@@ -144,12 +166,12 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .firstblock {
-        margin: 0px 20px 10px 20px;
+    .codeprogress {
+        grid-column: 1 / span 1;
     }
 
     .secondblock {
-        margin: 10px 20px 0px 20px;
+        margin-bottom: 40px;
     }
 }
 
