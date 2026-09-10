@@ -111,6 +111,8 @@ a {
     justify-content: center;
     align-items: center;
     outline: 6px dashed black;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 #firstblocktitle {
@@ -128,6 +130,8 @@ a {
     justify-content: center;
     align-items: center;
     outline: 6px dashed black;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 #secondblocktext {
@@ -137,7 +141,7 @@ a {
     margin: 0px auto;
 }
 
-.codeprogress {
+.thirdblock {
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -145,20 +149,111 @@ a {
     align-items: center;
     outline: 6px dashed black;
     grid-column: 1 / span 2;
+    grid-row: 2;
 }
 
-#codeprogresstitle {
+#thirdblocktitle {
     font-family: Onest;
     text-align: center;
     font-size: 48px;
     margin: 10px auto;
 }
 
-#codeprogresstext {
+#thirdblocktext {
     font-family: Onest;
     text-align: center;
     font-size: 24px;
-    margin: 10px auto;
+    margin: 0px auto;
+}
+
+.fourthblock {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+    grid-row: 1/ span 2;
+    grid-row: 3 / 5;
+}
+
+#fourthblocktitle {
+    font-family: Onest;
+    text-align: center;
+    font-size: 48px;
+    margin: 0px auto;
+}
+
+.fifthblock {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+}
+
+#fifthblocktext {
+    font-family: Onest;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px auto;
+}
+
+.sixthblock {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+}
+
+#sixthblocktext {
+    font-family: Onest;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px auto;
+}
+
+.seventhblock {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+}
+
+#seventhblocktitle {
+    font-family: Onest;
+    text-align: center;
+    font-size: 48px;
+    margin: 0px auto;
+}
+
+
+#seventhblocktext {
+    font-family: Onest;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px auto;
+}
+
+.eighthblock {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 6px dashed black;
+}
+
+#eighthblocktext {
+    font-family: Onest;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px auto;
 }
 
 @media (max-width: 768px) {
@@ -166,11 +261,18 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .codeprogress {
-        grid-column: 1 / span 1;
+    .firstblock,
+    .secondblock,
+    .thirdblock,
+    .fourthblock,
+    .sixthblock {
+        grid-column: 1;
+        grid-row: auto;
     }
 
-    .secondblock {
+    .secondblock,
+    .thirdblock,
+    .sixthblock {
         margin-bottom: 40px;
     }
 }
